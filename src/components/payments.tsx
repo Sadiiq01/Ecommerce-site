@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { ShopContext } from "../shopContext"; // Adjust path accordingly
-import { GoTrash } from "react-icons/go";
 
 const Payments = () => {
   const { products, dispatch } = useContext(ShopContext);
@@ -51,7 +50,7 @@ const Payments = () => {
           </div>
         </div>
         <button
-          className="w-full px-5 py-2 bg-pink-500 text-white rounded-lg"
+          className="w-full px-5 py-2 bg-pink-500 text-white rounded-lg cursor-pointer"
           onClick={handleCheckout} // Handle checkout click
         >
           Proceed Checkout

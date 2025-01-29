@@ -6,8 +6,6 @@ import { ShopContext } from "../shopContext";
 const CartItem = () => {
   const { products, dispatch } = useContext(ShopContext);
 
-  const total = products.reduce((a, p) => a + p.price, 0).toFixed();
-
   return (
     <div className="flex flex-col lg:flex-row p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6">
       <div className="flex-1">

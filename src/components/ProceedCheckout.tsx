@@ -1,8 +1,3 @@
-import { GoTrash } from "react-icons/go";
-import Payments from "./payments";
-import { useContext } from "react";
-import { ShopContext } from "../shopContext";
-
 const CartItem = () => {
   return (
     <div className="flex flex-col lg:flex-row p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6">

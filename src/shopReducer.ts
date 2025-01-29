@@ -1,32 +1,7 @@
+import { AddCart } from "./types/AddCart";
+import { EmptyCart } from "./types/EmptyCart";
 import { Product } from "./types/Product";
-
-interface AddCart {
-  type: "ADD_TO_CART";
-  product: {
-    id: number;
-    title: string;
-    description: string;
-    price: number;
-    discountPercentage: number;
-    rating: number;
-    stock: number;
-    brand: string;
-    category: string;
-    thumbnail: string;
-    images: string[];
-    quentity?: number;
-  };
-}
-
-interface RemoveFromCart {
-  type: "REMOVE_FROM_CART";
-  id: number;
-}
-
-interface EmptyCart {
-  type: "EMPTY_CART";
-  length: number;
-}
+import { RemoveFromCart } from "./types/RemoveFrmoCart";
 
 export type Action = AddCart | RemoveFromCart | EmptyCart;
 

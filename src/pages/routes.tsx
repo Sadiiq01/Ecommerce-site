@@ -5,7 +5,6 @@ import Cart from "./Cart";
 import Products from "./Products";
 import App from "../App";
 import Product from "./Product";
-import ProductDetailsSkeleton from "../components/productDetailsSkeleton";
 import HomePage from "./Homepage";
 const router = createBrowserRouter([
   {

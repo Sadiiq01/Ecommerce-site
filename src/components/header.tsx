@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ShopContext } from "../shopContext";
 
 const header = () => {
-  const { products, dispatch } = useContext(ShopContext);
+  const { products } = useContext(ShopContext);
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-white bg-opacity-60  backdrop-blur-lg z-10 shadow-md  ">
